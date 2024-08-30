@@ -1,0 +1,146 @@
+.photos-acceuil {
+  background-color: white;
+  padding: 80px;
+}
+.photos-acceuil h2 {
+  color: #242424;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.photos-acceuil div {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.photos-acceuil div img{
+  height: 60vh;
+  width: 30%;
+}
+
+.corp-de-accueil {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  align-items: center;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.corp-de-accueil h1 {
+  margin-bottom: 15px;
+}
+
+.corp-de-accueil p {
+  margin-bottom: 30px;
+}
+
+.corp-de-accueil div {
+  padding-right: 80px;
+}
+.section-contact h2 {
+  color: #a5b4fc;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  color: white;
+}
+
+.form-nom-email div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+form div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.form-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+input,
+textarea {
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+}
+textarea {
+  padding-top: 13%;
+  align-items: center;
+}
+label {
+  margin-bottom: 10px;
+}
+.envoi {
+  text-align: center;
+}
+
+input[type="submit"] {
+  width: 200px;
+  margin: auto;
+  margin-bottom: 60px;
+  margin-top: 10px;
+  align-items: center;
+  display: inline-block;
+  background: linear-gradient(#8e86b5, #acaeed);
+  color: white;
+  border-radius: 50px;
+  padding: 20px 30px;
+}
+.envoi :hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 996px) {
+  .corp-de-accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .corp-de-accueil div {
+    padding-right: 0;
+    text-align: center;
+    order: 2;
+  }
+
+  .corp-de-accueil img {
+    order: 1;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .photos-acceuil {
+    padding: 20px;
+  }
+
+  .photos-acceuil div {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .section-contact {
+    padding: 50px 20px;
+  }
+
+  .form-non-email {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
